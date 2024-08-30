@@ -2,6 +2,8 @@ import streamlit as st
 from langchain.prompts import PromptTemplate
 from langchain.llms import CTransformers
 from huggingface_hub import login
+from langchain_community.llms import CTransformers
+
 
 # Replace 'your_huggingface_token_here' with the token you just created
 token = "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"
