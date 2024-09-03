@@ -9,7 +9,7 @@ User-Friendly Interface: Streamlit-based UI for a seamless user experience.
 Installation
 To run this application locally, follow these steps:
 
-Clone the repository:
+
 
 bash
 Copy code
@@ -33,14 +33,4 @@ Enter the Blog Topic: Provide a topic for your blog.
 Select the Audience: Choose the target audience for the blog.
 Specify the Word Count: Define the desired length of the blog.
 Generate: Click on the "Generate" button to create your blog post.
-Example
 
-License
-This project is licensed under the MIT License.
-
-Contributions
-Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
-
-Acknowledgments
-Hugging Face for providing the language model API.
-Streamlit for the interactive web application framework.
