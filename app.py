@@ -14,7 +14,7 @@ def getLLamaResponse(input_text, no_words, blog_style):
     try:
         # Example model path; use a correct and accessible model path
         llm = CTransformers(
-            model='meta-llama/Llama-2-7b-chat-hf',  # Adjust this path based on your model
+            model='TheBloke/Llama-2-7B-Chat-GGML',  # Adjust this path based on your model
             model_type='llama',
             config={'max_new_tokens': 256, 'temperature': 0.01}
         )
