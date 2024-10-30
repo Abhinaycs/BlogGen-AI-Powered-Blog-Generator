@@ -6,7 +6,7 @@ from langchain_community.llms import CTransformers
 
 
 # Replace 'your_huggingface_token_here' with the token you just created
-token = "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"
+token = "YOUR API KEY"
 login(token)
 
 ## Function to get response from LLaMA 2 model
