@@ -5,7 +5,7 @@ from huggingface_hub import login
 from langchain_community.llms import CTransformers
 
 
-# Replace 'your_huggingface_token_here' with the token you just created
+# we can add our api token here
 token = "YOUR API KEY"
 login(token)
 
@@ -29,7 +29,7 @@ def getLLamaResponse(input_text, no_words, blog_style):
             template=template
         )
         
-        # Generate the response from the LLaMA 2 model
+        # it is used to generate the response from the LLaMA 2 model
         formatted_prompt = prompt.format(blog_style=blog_style, input_text=input_text, no_words=no_words)
         response = llm(formatted_prompt)
         
@@ -43,7 +43,7 @@ st.header("Generate Blogs 🤖")
 
 input_text = st.text_input("Enter the Blog Topic")
 
-# Creating two more columns for additional 2 fields
+# additional input fields 
 col1, col2 = st.columns([5, 5])
 
 with col1:
@@ -53,7 +53,7 @@ with col2:
     
 submit = st.button("Generate")
 
-# Final response
+# Final output or response
 if submit:
     response = getLLamaResponse(input_text, no_words, blog_style)
     st.write(response)
