@@ -6,7 +6,7 @@ from langchain_community.llms import CTransformers
 
 
 # we can add our api token here
-token = "YOUR API KEY"
+token = "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"
 login(token)
 
 ## Function to get response from LLaMA 2 model
